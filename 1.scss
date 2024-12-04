@@ -1,0 +1,165 @@
+$text-color: #ffffff;  
+$header-color: #333;
+$background-color: #484041;
+$hover-color: bisque;
+$font-family: 'Arial, sans-serif';
+$writing-secondary: italic;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: $header-color;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: $font-family;
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: $text-color;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .nav {
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin: 0 1rem;
+
+        a {
+          text-decoration: none;
+          color: $text-color;
+          font-size: 1rem;
+          transition: color 0.3s;
+
+          &:hover {
+            color: $hover-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+body {
+  background-color: $background-color;
+}
+
+.box {
+  padding: 40px;
+  margin: 0%;
+  font-family: $writing-secondary;
+  text-align:center;
+  background-image: url(./backround.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  color: $text-color;
+}
+
+p {
+  color: $text-color;
+  font-size: larger;
+}
+
+.a {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  align-items: flex-start; 
+
+  .t {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .i {
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+
+    img {
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: $text-color;
+  font-size: 1rem;
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &:hover {
+    background-color: $hover-color;
+    color: $header-color;
+  }
+}
+footer{
+    background-color: $header-color;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+    color: $text-color;
+}
+.socialIcons{
+    text-decoration: none;
+    padding:  10px;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: $text-color;
+    opacity: 0,9;
+}
+label{
+    color: $text-color;
+}
+input{
+    color: $text-color;
+}
+h2{
+    color: $text-color;
+}
+h3{
+    color: $text-color;
+}
+.f{
+    text-align: center;
+    color: $text-color;
+}
+table td img {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+}
